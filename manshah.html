@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy birthday Manshah</title>
+	<style>
+		.container {
+			position: relative;
+			height: 100vh;
+		}
+		
+		.button {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding: 20px;
+			border: none;
+			background-color: #4CAF50;
+			color: white;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		
+		#myImage {
+			display: none;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+        h1{
+            text-align: center;
+            margin: 0 auto;
+        }
+	</style>
+</head>
+<body>
+	<div class="container">
+        <h1 >Suprise</h1>
+		<button class="button" onclick="showImage()">Click Me</button>
+		<img id="myImage" src="1.jpg" alt="My Image">
+	</div>
+	
+	<script>
+		function showImage() {
+			document.getElementById("myImage").style.display = "block";
+            setTimeout(function() {
+    window.location.href = "./2.html";
+  }, 5000);
+		}
+	</script>
+</body>
+</html>
